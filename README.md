@@ -3,7 +3,7 @@
 ## Build project (windows)
 
 ```shell
-gradlew build
+.\gradlew.bat build
 ```
 
 ## Build project (mac)
