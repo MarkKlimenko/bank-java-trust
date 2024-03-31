@@ -16,7 +16,14 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    /*
+    Заменяем зависимость spring-boot-starter на более расширенную
+    spring-boot-starter-webflux, которая содержит в себе библиотеки для REST эндпоинтов
+    Не забываем обновлять gradle зависимости после изменения данного файла
+     */
+    // implementation 'org.springframework.boot:spring-boot-starter'
+    implementation "org.springframework.boot:spring-boot-starter-webflux"
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
