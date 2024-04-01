@@ -33,4 +33,12 @@ public class UserService {
 
         return user;
     }
+
+    public void deleteUserById(long id) {
+        userStorage.remove(id);
+    }
+
+    public long countUsers() {
+        return userStorage.size();
+    }
 }

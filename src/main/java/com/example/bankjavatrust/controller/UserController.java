@@ -37,4 +37,14 @@ public class UserController {
     public User addUserBalance(@PathVariable long id, @PathVariable double amount) {
         return userService.addUserBalance(id, amount);
     }
+
+    @DeleteMapping("{id}")
+    public void deleteUserById(@PathVariable long id) {
+        userService.deleteUserById(id);
+    }
+
+    @GetMapping("count")
+    public long countUsers() {
+        return userService.countUsers();
+    }
 }
